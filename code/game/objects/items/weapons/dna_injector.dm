@@ -103,6 +103,9 @@
 	if(!user.IsAdvancedToolUser())
 		user.action_feedback(SPAN_WARNING("You have no clue what to do with [src]."), src)
 		return
+	if(user.species_flags & NO_THUMBS)
+		user.action_feedback(SPAWN_WARNING("You don't have the dexterity to use [src].", src))
+		return
 	if(inuse)
 		return
 

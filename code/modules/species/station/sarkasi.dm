@@ -56,7 +56,7 @@
 	heat_level_2 = 600
 	heat_level_3 = 1400
 
-	species_flags =  NO_SLIP | NO_MINOR_CUT
+	species_flags =  NO_SLIP | NO_MINOR_CUT | NO_THUMBS
 	species_spawn_flags = SPECIES_SPAWN_WHITELISTED | SPECIES_SPAWN_NO_FBP_CONSTRUCT | SPECIES_SPAWN_NO_FBP_SETUP | SPECIES_SPAWN_CHARACTER
 	species_appearance_flags = HAS_EYE_COLOR | HAS_BASE_SKIN_COLOR
 
@@ -68,6 +68,7 @@
 	slowdown = 0.2
 
 	vision_innate = /datum/vision/baseline/species_tier_1
+	unarmed_types = list(/datum/unarmed_attack, /datum/unarmed_attack/bite, /datum/unarmed_attack/claws)
 
 	hud_type = /datum/hud_data/sarkasi
 /*

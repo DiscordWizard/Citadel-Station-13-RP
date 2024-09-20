@@ -60,7 +60,7 @@
 	recharge(target, user)
 
 /obj/item/inducer/proc/cantbeused(mob/user)
-	if(!user.IsAdvancedToolUser())
+	if(!user.IsAdvancedToolUser() || (user.species_flags & NO_THUMBS))
 		to_chat(user, "<span class='warning'>You don't have the dexterity to use [src]!</span>")
 		return TRUE
 

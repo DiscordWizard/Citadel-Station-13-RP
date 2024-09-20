@@ -78,7 +78,7 @@
 	if (!diode)
 		to_chat(user, "<span class='notice'>You point [src] at [target], but nothing happens!</span>")
 		return
-	if (!user.IsAdvancedToolUser())
+	if (!user.IsAdvancedToolUser() || (user.species_flags & NO_THUMBS))
 		to_chat(user, "<span class='warning'>You don't have the dexterity to do this!</span>")
 		return
 
