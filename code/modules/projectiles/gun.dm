@@ -276,9 +276,11 @@
 			return 0
 	if(!handle_pins(user))
 		return 0
-
+	if(user.species_flags & NO_THUMBS)
+		to_chat(M, "<span class='danger'>You lack the dexterity to use this.</span>")
+		return 0
 	var/mob/living/M = user
-	if(MUTATION_HULK in M.mutations || (user.species_flags & NO_THUMBS))
+	if(MUTATION_HULK in M.mutations)
 		to_chat(M, "<span class='danger'>Your fingers are much too large for the trigger guard!</span>")
 		return 0
 	if((MUTATION_CLUMSY in M.mutations) && prob(40)) //Clumsy handling
