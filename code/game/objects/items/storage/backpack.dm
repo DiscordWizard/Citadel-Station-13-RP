@@ -606,7 +606,7 @@
 	if(istype(H) && istype(TT, /datum/sprite_accessory/tail/legacy_taur/feline))
 		item_state = "[icon_base]_feline"
 		return 1
-	if(istype(H) && istype(TT, /datum/sprite_accessory/tail/legacy_taur/drake))
+	if(istype(H) && istype(TT, /datum/sprite_accessory/tail/legacy_taur/drake) || (user.get_species_name = SPECIES_SARKASI))
 		item_state = "[icon_base]_drake"
 		return 1
 	if(istype(H) && istype(TT, /datum/sprite_accessory/tail/legacy_taur/otie))
