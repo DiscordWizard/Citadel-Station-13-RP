@@ -28,6 +28,8 @@
 #define CONTAMINATION_IMMUNE (1<<12)
 /// Cannot be ignited
 #define NO_IGNITE (1<<13)
+/// Has limited manipulation
+#define NO_THUMBS (1<<14)
 
 DEFINE_BITFIELD(species_flags, list(
 	BITFIELD(NO_MINOR_CUT),
@@ -43,6 +45,8 @@ DEFINE_BITFIELD(species_flags, list(
 	BITFIELD(NO_INFECT),
 	BITFIELD(NO_DEFIB),
 	BITFIELD(CONTAMINATION_IMMUNE),
+	BITFIELD(NO_IGNITE),
+	BITFIELD(NO_THUMBS),
 ))
 
 //! species_fluff_flags

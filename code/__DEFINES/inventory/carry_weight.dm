@@ -24,6 +24,7 @@
 #define CARRY_STRENGTH_ADD_XENOHYBRID 2.5
 #define CARRY_STRENGTH_ADD_ALRAUNE 10 //alraune already deal with slowdown, let's give them some big bonus for being slow.
 #define CARRY_STRENGTH_ADD_DIONA 20 //hee hoo
+#define CARRY_STRENGTH_ADD_SARKASI 20 //actual beasts of burden
 
 //? Carry factor - multiplier for penalizing over-limit weight; higher is worse.
 
@@ -38,6 +39,7 @@
 #define CARRY_FACTOR_MOD_PROTEAN 1.12
 #define CARRY_FACTOR_MOD_XENOCHIMERA 0.88
 #define CARRY_FACTOR_MOD_XENOHYBRID 0.88
+#define CARRY_FACTOR_MOD_SARKASI 0.5 //have you seen the size of those lads
 #define CARRY_FACTOR_MOD_ALRAUNE 0.1 //! finally, a real reason to be an alraune
 #define CARRY_FACTOR_MOD_DIONA 0.05 //! i am groot
 
